@@ -1,0 +1,924 @@
+  100  bbedit nl.cwi.dis.cwipc/package.json
+  101  git status
+  102  git commit -a -m "Renamed FrameInfo to FrameMetadata. Preparers allow accessing it. Prerecorded reader inserts filename in there."
+  103  git status
+  104  git push
+  105  cd ..
+  106  git status
+  107  git commit -a -m "Submodule commit"
+  108  git push
+  109  git status
+  110  cd cwipc_unity
+  111  git status
+  112  git commit -a -m "Allocate the metadata when we allocate the BaseMemoryChunk"
+  113  git push
+  114  ps axl | grep -i unity
+  115  cd src/VRTogether/cwipc
+  116  bbedit scripts/install-3rdparty-osx1015.sh
+  117  ssh framboos.local
+  118  ssh framboos.local
+  119  ssh framboos.local
+  120  cd
+  121  cd src/VRTogether/VR2Gather
+  122  rm -rf Library
+  123  git status
+  124  rm -rf Library
+  125  df
+  126  ls /Volumes
+  127  cd /Volumes/BackupAchterkamer2021/Media2021/FramboosBackup 
+  128  ls
+  129  cat 1mcount
+  130  diskutil list
+  131  diskutil list
+  132  dd if=/dev/rdisk8 of=framboos.20221223.dd bs=1m
+  133  sudo dd if=/dev/rdisk8 of=framboos.20221223.dd bs=1m
+  134  cd
+  135  cd tmp
+  136  npm
+  137  npm install --global homey
+  138  homey --help
+  139  homey list
+  140  homey list
+  141  homey tools --help
+  142  homey tools
+  143  cd tmp
+  144  sudo dd if=/dev/rdisk8 of=framboos.20221223.dd bs=1m
+  145  open .
+  146  diskutil eject disk8
+  147  diskutil list
+  148  python3
+  149  cd tmp
+  150  python3 -m venv .venv
+  151  . .venv/bin/activate
+  152  pip install --upgrade pip setuptools build wheel
+  153  pip install requests requests_toolbelt mechanize pillow numpy open3d
+  154  pil --help
+  155  pip --help
+  156  pip --no-cache-dir install requests requests_toolbelt mechanize pillow numpy open3d
+  157  deactivate
+  158  rm -r .venv
+  159  python3 -m venv .venv
+  160  . .venv/bin/activate
+  161  pip install --upgrade pip setuptools build wheel
+  162  pip install requests requests_toolbelt mechanize pillow numpy
+  163  pip --no-cache-dir install requests requests_toolbelt mechanize pillow numpy open3d
+  164  cd cwipc/cwipc_unity
+  165  ls
+  166  cd nl.cwi.dis.cwipc
+  167  ls
+  168  bbedit package.json
+  169  open CHANGELOG.md
+  170  git status
+  171  git commit -a -m "Upped version to 0.10.0"
+  172  git push
+  173  cd
+  174  cd src/VRTogether
+  175  open cwipc_test/cwipc-unity-test
+  176  cd cwipc_test/cwipc-unity-test
+  177  ls
+  178  rm -r Library obj
+  179  git status
+  180  git checkout -- .
+  181  git status
+  182  git status
+  183  git add Assets
+  184  git status
+  185  git commit -m "Updated to cwipc_unity 0.10.0"
+  186  git push
+  187  cd ../..
+  188  cd VR2Gather/Assets/Pilots/Common/Interaction
+  189  ls
+  190  cat HandInteraction.cs.meta
+  191  cd ../..
+  192  cd ..
+  193  grep -r 14ad46424dabc4d2b8e353e26c727bc9 .
+  194  ls ~/.ssh
+  195  ssh git@github.com
+  196  cd
+  197  cd src/VRTogether/VR2Gather
+  198  cd Assets
+  199  ls
+  200  ls Samples
+  201  ls Samples/XR\ Interaction\ Toolkit
+  202  ls Samples/XR\ Interaction\ Toolkit/2.0.4
+  203  ls Samples/XR\ Interaction\ Toolkit/2.0.4/Starter\ Assets
+  204  ls Samples/XR\ Interaction\ Toolkit/2.0.4/Starter\ Assets/XRI\ Default\ Continuous\ Move.preset.meta
+  205  cat Samples/XR\ Interaction\ Toolkit/2.0.4/Starter\ Assets/XRI\ Default\ Continuous\ Move.preset.meta
+  206  grep guid Samples/XR\ Interaction\ Toolkit/2.0.4/Starter\ Assets/*.meta
+  207  grep -r 91f9da00cfdac5d49955df2d2d820b9c .
+  208  grep -r 0caad3af14f9a414dbdf25ed41e5aa47 .
+  209  grep -r c348712bda248c246b8c49b3db54643f .
+  210  grep -r 8404be70184654265930450def6a9037 .
+  211  grep -r ffd8268f7307a0c48a067dad4a8fe060 .
+  212  grep -r 1421ad86ff3787b4dae70fe9e699a25f .
+  213  grep -r 18697d253d848974aa7052cba872c9f0 .
+  214  rm -r Samples/XR\ Interaction\ Toolkit
+  215  rm Samples/XR\ Interaction\ Toolkit.meta
+  216  rm Samples.meta
+  217  rmdir Samples
+  218  cd 
+  219  cd src/VRTogether
+  220  ls
+  221  cat findguids.sh
+  222  cd VR2Gather/Assets
+  223  grep guid Pilots/Common/Interaction/PlayerPositionTeleporter.cs.meta
+  224  grep -r 4349f8e1606e9da4db15950b49e4b979 .
+  225  grep -r 4349f8e1606e9da4db15950b49e4b979 .
+  226  git rm Pilots/Common/Interaction/PlayerPositionTeleporter.cs*
+  227  git status
+  228  git commit -a -m "Getting rid of PlayerPositionTeleporter"
+  229  git push
+  230  ls
+  231  grep -r "guid " VRTeleporter
+  232  grep -r "guid" VRTeleporter
+  233  grep -r "guid:" VRTeleporter
+  234  grep -r "^guid:" VRTeleporter
+  235  grep -r "^guid:" VRTeleporter >> ../../findguids.sh
+  236  bbedit ../../findguids.sh
+  237  sh ../../findguids.sh
+  238  sh ../../findguids.sh
+  239  grep -r "^guid:" VRTeleporter >> ../../findguids.sh
+  240  sh ../../findguids.sh
+  241  git rm -r VRTeleporter*
+  242  git status
+  243  git add Pilots/Common/Prefabs
+  244  git status
+  245  git commit -a -m "Keep teleporter materials, and get rid of all the rest of VRTeleporter. Yeah
+  246  git commit -a -m "Keep teleporter materials, and get rid of all the rest of VRTeleporter. Yeah..."
+  247  git push
+  248  cat Pilots/Common/Interaction/InputSystemHandling.cs.meta
+  249  grep -r 95f52fba27f614fb1be947b23540f73c .
+  250  git rm -r DevelopmentTests/TestTeleporter*
+  251  git status
+  252  git commit -m "TestTeleporter is useless, now that VRTTeleporter is outdated"
+  253  cat VRTeleporter.meta
+  254  grep -r d31b7c2a43a6aa14f9843cc91b71a7a5 .
+  255  ls VRTeleporter
+  256  cat VRTeleporter/VRTeleporter.asmdef
+  257  grep -r VRTeleporter .
+  258  more VRTeleporter/FreeTeleporter.cs
+  259  grep -r VRT.Teleporter .
+  260  git status
+  261  git commit -a -m "More VRTeleporter references gone"
+  262  cd ..
+  263  rm -r Library
+  264  ssh -p 6322 pi@80.112.154.69
+  265  cd tmp
+  266  git clone ssh://pi@80.112.154.69:6322/home/pi/test
+  267  ssh -p 6322 pi@80.112.154.69
+  268  git clone ssh://pi@80.112.154.69:6322/home/pi/test
+  269  df -h
+  270  ssh framboos.local
+  271  ssh framboos.local
+  272  cd
+  273  cd src/VRTogether/VR2Gather/Assets
+  274  cat Pilots/Common/Networking/PlayerTransformSyncBehaviour.cs.meta
+  275  grep -r 48813443cdc88ac46b1f35d548a39676 .
+  276  cat Assetucat Pilots/Common/Interaction/RigidBodyController.cs.meta
+  277  grep -r 02d42fb5864e54c4c92dcf2476aa1a23 .
+  278  cat Assetucat Pilots/Common/Networking/NetworkTransformSyncBehaviour.cs.meta
+  279  grp -r ff3789dca7a34e6468efe57fdd3e61eb .
+  280  grep -r ff3789dca7a34e6468efe57fdd3e61eb .
+  281  cd
+  282  cd src/VRTogether
+  283  ls
+  284  ls -l VR2Gather-old
+  285  git clone VR2Gather VR2Gather-old
+  286  cd VR2Gather-old
+  287  git remote
+  288  git remote --help
+  289  git remote rename origin local
+  290  git remote add origin git@github.com:cwi-dis/VR2Gather
+  291  cd Assets
+  292  ls
+  293  find . -print | grep UI
+  294  cd Tools/UI
+  295  ls
+  296  git log UI_pointing_hit.png
+  297  git help log
+  298  git log --follow UI_pointing_hit.png
+  299  cd ../..
+  300  cd ..
+  301  cd Assets
+  302  ls
+  303  ls ExternalAssets
+  304  rm -rf ExternalAssets*
+  305  pwd
+  306  cd src/VRTogether/VR2Gather
+  307  rm -rf Library
+  308  git status
+  309  ls Assets/PilotsExternal
+  310  rm -r Assets/PilotsExternal/MedicalExamination
+  311  rm -r Assets/PilotsExternal/CWI_cake
+  312  rm -r Assets/PilotsExternal/mediaScape
+  313  cd Assets
+  314  cat PilotsExternal/mediaScape/MediaScape/Scripts/SceneSwitch.cs.meta
+  315  grep -r 4b6e6053d899da645936d57cd07073b3 .
+  316  grep -r 4b6e6053d899da645936d57cd07073b3 .
+  317  grep -r 4b6e6053d899da645936d57cd07073b3 .
+  318  cat Pilots/Common/Prefabs/01_Player/PFB_PlayerMediascape.prefab.meta
+  319  grep -r 1391ae7e1169e4578a6cdcf649df640e .
+  320  cat Pilots/Common/Prefabs/01_Player/P_Self_Player_Mediascape.prefab.meta
+  321  grep -r a278cc9f6e47c4b03813a4948b952a5c .
+  322  cat Pilots/Common/Prefabs/01_Player/P_Player_Mediascape.prefab.meta
+  323  grep -r ee5d58162f9a040f1a480826b51cf8c1 .
+  324  cd src/VRTogether/VR2Gather/Assets
+  325  ;s
+  326  ls
+  327  ls VRTVideo
+  328  cd ../..
+  329  cd ../..
+  330  cd VR2Gather-old
+  331  cd
+  332  cd src/VRTogether/VR2Gather/Assets/Pilots/Common/Prefabs/01_Player
+  333  ls
+  334  mv P_Player.prefab P_Player_Tmp.prefab
+  335  mv P_Self_Player.prefab P_Self_Tmp.prefab
+  336  cwipc_grab --help
+  337  pwd
+  338  cd ../../..
+  339  cd ../..
+  340  rm -r Assets/PilotsExternal/mediaScape
+  341  cd Assets/PilotsExternal
+  342  ls
+  343  du TransmiXR
+  344  cp -r TransmiXR ~/tmp/
+  345  ls
+  346  rm -r TransmiXR
+  347  pwd
+  348  cd ../Pilots/Common
+  349  open Props/Mudballs
+  350  open ~/tmp/TransmiXR
+  351  ping framboos.local
+  352  ping www.nluug.nl
+  353  ping framboos.local
+  354  ping framboos.local
+  355  ping framboos.local
+  356  ping framboos.local
+  357  ping framboos.local
+  358  ssh framboos.local
+  359  ssh framboos.local
+  360  ssh framboos.local
+  361  ssh framboos.local
+  362  ssh framboos.local
+  363  cd ../iotsa
+  364  code .
+  365  iotsa --target nodimmer xInfo dimmer
+  366  cd ../lissabon
+  367  code lissabonDimmer
+  368  iotsa --target nodimmer info
+  369  python
+  370  python3
+  371  iotsa --target stripdeur info
+  372  iotsa devices
+  373  iotsa targets
+  374  iotsa --target stripdeur info
+  375  iotsa --target stripdeur xInfo ledstrip
+  376  iotsa --target stripdeur xInfo ledstrip
+  377  iotsa --target stripdeur xInfo ledstrip
+  378  iotsa --target stripdeur xInfo ledstrip
+  379  iotsa --target stripdeur xInfo ledstrip
+  380  iotsa --target stripdeur xInfo ledstrip
+  381  iotsa --target stripdeur xInfo ledstrip
+  382  iotsa --target stripdeur xInfo ledstrip
+  383  iotsa --target stripdeur xInfo ledstrip
+  384  iotsa --target stripdeur info
+  385  iotsa --target stripdeur xInfo battery
+  386  iotsa --target stripdeur xConfig battery sleepDuration=0 wakeDuration=0
+  387  iotsa --target stripdeur xInfo battery
+  388  iotsa --target stripdeur reboot
+  389  iotsa --target stripdeur xInfo battery
+  390  ping stripdeur.local
+  391  code ../iotsa
+  392  iotsa --target stripdeur xInfo battery
+  393  iotsa --target stripdeur xInfo battery
+  394  cd
+  395  cd src/dis-git/lissabon
+  396  ls
+  397  code lissabonDimmer
+  398  ls -ltr /dev/
+  399  ls -ltr /dev/
+  400  ls -ltr /dev/
+  401  ls -ltr /dev/
+  402  iotsa networks
+  403  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan --xml
+  404  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan --xml
+  405  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --help
+  406  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --scan
+  407  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+  408  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s1
+  409  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -x
+  410  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
+  411  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+  412  sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+  413  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+  414  networksetup --help
+  415  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --help
+  416  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
+  417  sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
+  418  sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -x
+  419  sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -x -s
+  420  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -x -s
+  421  iotsa networks
+  422  iotsa --ssid config-iotsae4ab6224 --target 192.168.4.1 info
+  423  iotsa --ssid config-iotsae4ab6224 --target 192.168.4.1 --help info
+  424  iotsa --ssid config-iotsae4ab6224 --target 192.168.4.1 info
+  425  iotsa --ssid config-iotsae4ab6224 --target 192.168.4.1 config hostName=nodimmer wifiConfig ssid=Goudreinet24 sspdPassword=6160335616033 reboot
+  426  iotsa --target nodimmer info
+  427  iotsa --target nodimmer info
+  428  ping nodimmer.local
+  429  iotsa --ssid config-nodimmer --target 192.168.4.1 configWait wifiConfig ssid=Goudreinet24 sspdPassword=str:6160335616033 reboot
+  430  iotsa --ssid config-nodimmer --target 192.168.4.1 configWait wifiConfig ssid=Goudreinet24 sspdPassword=str:6160335616033 reboot
+  431  iotsa --ssid config-nodimmer --target 192.168.4.1 configWait wifiConfig ssid=Goudreinet24 ssidPassword=str:6160335616033 reboot
+  432  iotsa --target nodimmer info
+  433  iotsa --target nodimmer xInfo dimmer
+  434  iotsa --target nodimmer xConfig dimmer isOn=1
+  435  iotsa --target nodimmer xConfig dimmer level=1
+  436  iotsa --target nodimmer xConfig dimmer level=0.2
+  437  iotsa --target nodimmer xConfig dimmer level=0.1
+  438  iotsa --target nodimmer xConfig dimmer level=0.05
+  439  iotsa --target nodimmer xInfo dimmer
+  440  ssh framboos.local
+  441  ssh framboos.local
+  442  ssh framboos.local
+  443  networksetup -listallnetworkservices
+  444  networksetup -listallhardwareports
+  445  /Users/jack/bin/blueboot ; exit;
+  446  source /Users/jack/src/dis-git/iotsa/.venv/bin/activate
+  447  cd src/VRTogether/VR2Gather
+  448  ls
+  449  ls *.meta
+  450  mkdir Documentation
+  451  open README.md
+  452  cd Documentation
+  453  touch develop.md
+  454  touch prerequisites.md
+  455  touch walkthrough.md
+  456  touch prefabs.md
+  457  touch createnew.md
+  458  mv develop.md overview.md
+  459  ls
+  460  open *.md
+  461  touch building.md
+  462  open building.md
+  463  ls
+  464  mv overview.md 01-overview.md
+  465  open .
+  466  open 01-overview.md
+  467  git submodule help
+  468  cd ..
+  469  open README.md
+  470  ls Documentation
+  471  git diff
+  472  git stash
+  473  open README.md
+  474  git stash apply
+  475  open README.md
+  476  git commit -a -m "Linked the documentation"
+  477  bbedit config.json
+  478  source /Users/jack/src/dis-git/iotsa/.venv/bin/activate
+  479  cd
+  480  cd src/dis-git/iotsa
+  481  which iotsa 
+  482  which iotsaControl
+  483  ls -l /opt/homebrew/bin/iotsa*
+  484  iotsa --version
+  485  rm -rf .pio
+  486  code .
+  487  pwd
+  488  find . -print | grep .venv
+  489  . .venv/bin/activate
+  490  pip freeze
+  491  cd extras/python
+  492  ls
+  493  pip install -r requirements.txt
+  494  python -m iotsa targets
+  495  deactivate
+  496  rm -r ../../.venv
+  497  python3 -m venv .venv
+  498  . .venv/bin/activate
+  499  pip install -r requirements
+  500  pip install -r requirements.txt
+  501  python -m iotsa targets
+  502  python -m iotsa targets
+  503  python -m iotsa targets
+  504  python -m iotsa targets
+  505  python -m iotsa targets
+  506  python -m iotsa targets
+  507  python -m iotsa targets
+  508  python -m iotsa --verbose targets
+  509  python -m iotsa --verbose targets
+  510  python -m iotsa --verbose targets
+  511  python -m iotsa --target nodimmer info
+  512  python -m iotsa --target auto info
+  513  python -m iotsa select info
+  514  python -m iotsa select help
+  515  python -m iotsa select 0 info
+  516  python -m iotsa select 0 info
+  517  python -m iotsa select 0 info
+  518  python -m iotsa select config info
+  519  python -m iotsa select config=1 info
+  520  python -m iotsa select config=1/bleserver=1 info
+  521  python -m iotsa select config=1/bleserver=1/dimmer=1 info
+  522  git status
+  523  git diff
+  524  git commit -a -m "Added support for selecting board by mDNS TXT key/value pairs. Clunky but it works."
+  525  git push
+  526  python -m iotsa select config=1 info
+  527  git commit -a -m "Don't allow multiple matches for select"
+  528  git push
+  529  cd ../lissabon/lissabonDimmer
+  530  code .
+  531  iotsa --target nodimmer info
+  532  rm -rf .pio
+  533  code .
+  534  cd ../lissabonLedstrip
+  535  rm -rf .pio
+  536  code .
+  537  iotsa --target stripdeur info
+  538  iotsa --target stripdeur otaWait ota .pio/build/lissabon-12v-ledstrip/firmware.bin
+  539  iotsa targets
+  540  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+  541  cd src/VRTogether
+  542  cd VR2Gather-old
+  543  open Assets/PilotsExternal
+  544  cd ..
+  545  bbdiff VR2Gather/Assets VR2Gather-old/Assets
+  546  bbdiff VR2Gather/Assets VR2Gather-old/Assets
+  547  ping server.huiskamer.private
+  548  traceroute server.huiskamer.private
+  549  ssh server.huiskamer.private
+  550  ssh www.jackjansen.nl
+  551  dns-sd -E
+  552  dns-sd -F
+  553  dns-sd -B iotsa
+  554  dns-sd -B _iotsa
+  555  dns-sd -L neoclock _iotsa
+  556  dns-sd -L nodimmer _iotsa
+  557  dns-sd -q nodimmer
+  558  dns-sd -q nodimmer.local
+  559  dns-sd -q www.cwi.nl
+  560  dns-sd -Z iotsa
+  561  dns-sd -Z _iotsa
+  562  iperf3 --help
+  563  iperf3 -c server.huiskamer.private
+  564  iperf3 -c server.huiskamer.private --reverse
+  565  iperf3 -c www.jackjansen.nl
+  566  iperf3 -c www.jackjansen.nl --reverse
+  567  dns-sd -B
+  568  man dns-sd
+  569  man 8 mdnsresponder
+  570  man 8 mDNSresponder
+  571  man mDNSresponder
+  572  man dns-sd 
+  573  ssh framboos.local
+  574  ping framboos.local
+  575  ping framboos.local
+  576  ping framboos.local
+  577  ping 192.168.1.3
+  578  ssh 192.168.1.3
+  579  cd src/VRTogether/VR2Gather
+  580  open Assets/PilotsExternal
+  581  cd Assets/PilotsExternal/TransmiXR
+  582  git log Textures/Ceramic04.png
+  583  pwd
+  584  ls
+  585  cd ..
+  586  ls
+  587  rm -r TransmiXR
+  588  cd ..
+  589  cd Pilots/Common/Props/Mudballs
+  590  ls
+  591  cd Prefabs
+  592  ls
+  593  cat MudBall.prefab.meta
+  594  cat GrabbableMudball.prefab.meta
+  595  cd ../../
+  596  cd ../..
+  597  cd ..
+  598  grep -r 4b09af7aaee46d440bfb545db1621ea9 .
+  599  bbedit Pilots/TechnicalPlayground/Scenes/TechnicalPlayground.unity
+  600  grep -r 8d99d54ef4091474798882170b6a730f .
+  601  pwd
+  602  cd ../..
+  603  ls
+  604  rm -rf VR2Gather-old
+  605  git clone git@github.com:cwi-dis/VR2Gather VR2Gather-other
+  606  cd VR2Gather-other
+  607  git lfs install
+  608  git lfs pull
+  609  git fetch --resurse-submodules
+  610  git fetch --recurse-submodules
+  611  ls Assets/ExternalAssets/VR2G-besthttp
+  612  git pull --recurse-submodules
+  613  ls Assets/ExternalAssets/VR2G-besthttp
+  614  open ..
+  615  git status
+  616  git checkout development/TransmiXR
+  617  git pull --recurse-submodules
+  618  ls Assets/PilotsExternal
+  619  ls Assets/PilotsExternal/TransmiXR
+  620  git submodule --help
+  621  git submodule sync
+  622  cat .gitmodules
+  623  git submodule
+  624  git submodule --help
+  625  git submodule update
+  626  git submodule --help
+  627  git submodule init
+  628  git submodule update
+  629  cd ..
+  630  rm -rf VR2Gather-other
+  631  history
+  632  history 100
+  633  git clone --recurse-submodules git@github.com:cwi-dis/VR2Gather VR2Gather-other
+  634  ls Assets/ExternalAssets/VR2G-besthttp
+  635  cd VR2Gather-other
+  636  ls Assets/ExternalAssets/VR2G-besthttp
+  637  git checkout development/TransmiXR
+  638  git submodule sync
+  639  git submodule init
+  640  git submodule update
+  641  cd ../VR2Gather/Assets/PilotsExternal/TransmiXR
+  642  ls
+  643  git status
+  644  git reset --hard
+  645  git status
+  646  git pull
+  647  git pull --help
+  648  git lfs uninstall
+  649  git reset --hard
+  650  git status
+  651  git lfs install
+  652  git pull
+  653  git status
+  654  history
+  655  pwd
+  656  cd ../../..
+  657  cd ..
+  658  rm -rf VR2Gather
+  659  git clone --recurse-submodules git@github.com:cwi-dis/VR2Gather
+  660  git status
+  661  cd Assets/PilotsExternal/TransmiXR
+  662  git status
+  663  git checkout master
+  664  git status
+  665  git lfs uninstall
+  666  git status
+  667  git reset --hard
+  668  git lfs install
+  669  git lfs pull
+  670  git status
+  671  git lfs migrate --help
+  672  git lfs migrate import --no-rewrite
+  673  git lfs migrate import --no-rewrite --everything
+  674  git lfs migrate import --no-rewrite 3DModels/Buiding/*.fbx
+  675  git status
+  676  git log
+  677  git lfs migrate import --no-rewrite 3DModels/NISV/Fbx/*.fbx
+  678  git lfs migrate import --no-rewrite 3DModels/NISV/Gltf/*.png
+  679  git lfs migrate import --no-rewrite 3DModels/NISV/Render/*.png
+  680  git lfs migrate import --no-rewrite 3DModels/OldRadio1/Mesh/Radio.FBX
+  681  git lfs migrate import --no-rewrite 3DModels/OldRadio1/Textures/*.png
+  682  git lfs migrate import --no-rewrite 3DModels/OldRadio2/Mesh/okean.FBX
+  683  git lfs migrate import --no-rewrite 3DModels/OldRadio2/Textures/*.psd
+  684  git lfs migrate import --no-rewrite 3DModels/OldRadio3/Mesh/rd2.FBX
+  685  git lfs migrate import --no-rewrite 3DModels/OldRadio3/Textures/*.png
+  686  git lfs migrate import --no-rewrite 3DModels/OldRadio3/Textures/*.tga
+  687  git lfs migrate import --no-rewrite Materials/WorldMaterialsFree/Resource\ Files/*/*.png
+  688  git status
+  689  ssh framboos.local
+  690  ssh framboos.local
+  691  ssh framboos.local
+  692  ssh framboos.local
+  693  ssh framboos.local
+  694  ssh framboos.local
+  695  cd src/jack-git
+  696  git clone git@github.com:jackjansen/homebridge-lissabon
+  697  cd homebridge-lissabon
+  698  node --version
+  699  npm -v
+  700  sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
+  701  hb-service
+  702  code .
+  703  npm install
+  704  rm -r ~/.npm
+  705  rm -rf ~/.npm
+  706  sudo rm -rf ~/.npm
+  707  npm install
+  708  npm run build
+  709  npm install mdns
+  710  git status
+  711  git diff
+  712  git commit -a -m "Added mdns"
+  713  git push
+  714  npm link
+  715  homebridge -D
+  716  npm uninstall mdns
+  717  npm install node_mdns
+  718  npm install mdns
+  719  npm run build
+  720  npm link
+  721  npm test
+  722  npm run
+  723  npm link
+  724  homebridge -D
+  725  open ~/.homebridge/
+  726  hb-service help
+  727  hb-service run
+  728  homebridge -D
+  729  npm run build
+  730  npm link
+  731  homebridge -D
+  732  homebridge -D
+  733  history
+  734  npm run build
+  735  npm link
+  736  homebridge -D
+  737  npm run build
+  738  npm link
+  739  homebridge -D
+  740  npm run build
+  741  npm link
+  742  homebridge -D
+  743  npm run build
+  744  npm link
+  745  homebridge -D
+  746  npm run build
+  747  npm link
+  748  homebridge -D
+  749  npm run build
+  750  npm link
+  751  homebridge -D
+  752  cd src
+  753  cp platformWiFiAccessory.ts platformBleAccessory.ts
+  754  npm run build
+  755  npm link
+  756  homebridge -D
+  757  git status
+  758  cd ..
+  759  git status
+  760  git add .
+  761  git status
+  762  git commit -m "Getting quite a bit further with BLE imlementation"
+  763  git push
+  764  npm run build
+  765  npm link
+  766  homebridge -D
+  767  npm run build
+  768  npm link
+  769  homebridge -D
+  770  npm run build
+  771  npm link
+  772  homebridge -D
+  773  npm run build
+  774  npm link
+  775  homebridge -D
+  776  npm run build
+  777  npm link
+  778  homebridge -D
+  779  hb-service
+  780  hb-service run
+  781  homebridge -D
+  782  npm run build
+  783  npm link
+  784  homebridge -D
+  785  homebridge -D
+  786  hb-service
+  787  hb-service start
+  788  sudo hb-service start
+  789  hb-service install
+  790  sudo hb-service install
+  791  sudo hb-service stop
+  792  sudo hb-service uninstall
+  793  git status
+  794  git commit -a -m "More bits and pieces of BLE support"
+  795  git push
+  796  iotsa help
+  797  iotsa bleTargets
+  798  iotsa bleTargets
+  799  cd src/dis-git/lissabon
+  800  code lissabonDimmer
+  801  ping framboos.local
+  802  ping framboos.local
+  803  ping framboos.local
+  804  ping framboos.local
+  805  ping framboos.local
+  806  ping framboos.local
+  807  ping framboos.local
+  808  ssh 192.168.1.3
+  809  ssh 192.168.1.3
+  810  ssh 192.168.1.3
+  811  cd src/VRTogether/VR2Gather
+  812  git checkout master
+  813  ls -l Assets/PilotsExternal/TransmiXR
+  814  rm -r Assets/PilotsExternal/TransmiXR
+  815  git status
+  816  git merge --no-ff --no-commit development/TransmiXR
+  817  git status
+  818  cd Assets/PilotsExternal/TransmiXR/3DModels
+  819  rm -r Buiding
+  820  ls
+  821  cd ../Prefabs
+  822  ls
+  823  cd ..
+  824  ls Textures
+  825  rm -rf Textures
+  826  ls -l Materials
+  827  rm -r Materials
+  828  git checkout -- Materials
+  829  rm -r Materials
+  830  git checkout -- Materials
+  831  rm -r Materials
+  832  git checkout -- Materials
+  833  git checkout -- Materials
+  834  git checkout -- Materials
+  835  git status
+  836  git commit -a -m "Got rid of Beeld&Geluid museum"
+  837  ls
+  838  git status
+  839  git add CWI*
+  840  git status
+  841  git commit -a -m "Moved Jacks Museum into CWI directory"
+  842  pwd
+  843  cd ../../..
+  844  cd -
+  845  git status
+  846  pwd
+  847  cd -
+  848  bbedit config.json
+  849  git status
+  850  git commit -a -m "Got rid of autostart"
+  851  git push origin
+  852  git push transmixr
+  853  cd Assets
+  854  ls
+  855  bbdiff XR PilotsExternal/TransmiXR/TUS/XR
+  856  bbdiff XRI PilotsExternal/TransmiXR/TUS/XRI
+  857  cd PilotsExternal/TransmiXR/TUS
+  858  ls
+  859  rm -r XR*
+  860  git status
+  861  which cwipc_view
+  862  ls -l /opt/homebrew/bin/cwipc_*
+  863  brew update
+  864  brew upgrade
+  865  cd
+  866  cd src/VRTogether/VR2Gather
+  867  bbedit config.json
+  868  brew help
+  869  brew search cwipc
+  870  brew info cwi-dis/cwipc/cwipc
+  871  cwipc_view --synthetic
+  872  which cwipc_view
+  873  ls -l /usr/local/bin/cwipc_view
+  874  ls -l /usr/local/bin/cwipc_*
+  875  brew link cwipc
+  876  brew unlink cwipc
+  877  brew link cwipc
+  878  ls -l /usr/local/bin/cwipc_*
+  879  cwipc_pymodules_install.sh
+  880  ls -l /usr/local/bin/cwipc_*
+  881  iperf3
+  882  iperf3 -c 192.16.197.145
+  883  iperf3 -c 192.16.197.145 -p 8087
+  884  ssh www.jackjansen.nl
+  885  brew install chrony
+  886  brew install chronycontrol
+  887  chronyc
+  888  cd
+  889  cd src/VRTogether/VR2Gather
+  890  ls Assets/PilotsExternal/TransmiXR
+  891  ls Assets/PilotsExternal/
+  892  rm -rf Assets/PilotsExternal/TransmiXR
+  893  bbedit config.json
+  894  cwi-tunnel
+  895  ssh flauwte-tunnel
+  896  cd src/VRTogether/VR2Gather
+  897  rm -r Assets/PilotsExternal/TransmiXR*
+  898  ssh framboos.local
+  899  cd ../..
+  900  cd cwipc/cwipc_util
+  901  ls
+  902  cd doc
+  903  ls
+  904  open target-a4.pdf
+  905  ssh framboos.local
+  906  pwd
+  907  cd src/VRTogether/VR2Gather
+  908  ls
+  909  ls -l
+  910  mkdir LissabonConfigFiles
+  911  cp config.json LissabonConfigFiles/config-exp-user.json
+  912  cd LissabonConfigFiles
+  913  bbedit config-exp-user.json
+  914  cp config-exp-user.json config-exp-viewer.json
+  915  bbedit config-exp-viewer.json
+  916  cp config-exp-user.json config-aut-user-left.json
+  917  bbedit config-aut-user-left.json
+  918  cp config-aut-user-left.json config-aut-user-right.json
+  919  cp config-aut-user-left.json config-aut-viewer.json
+  920  bbedit config-aut-*
+  921  git status
+  922  git add .
+  923  git status
+  924  git commit -m "Added config files for all lissabon demos, all machines. So we can quickly restart in case of a problem"
+  925  python dynamic library package
+  926  gcc -dumpmachine
+  927  python3
+  928  cd
+  929  cd packages
+  930  git clone .
+  931  git clone git@github.com:Unity-Technologies/DesktopSamples.git
+  932  cd DesktopSamples
+  933  cd SimplestPluginExample
+  934  ls
+  935  cd PluginSource
+  936  ls -l
+  937  cat Plugin.cpp
+  938  ls -l
+  939  ls -l Linux
+  940  more Linux/build.sh
+  941  ls
+  942  ls macOS
+  943  ls Windows
+  944  ls -l
+  945  ls -l UWP
+  946  ls -l
+  947  cd ..
+  948  ls -l
+  949  open Unity\ Project
+  950  file /Users/jack/packages/DesktopSamples/SimplestPluginExample/Unity\ Project/Assets/Plugins/macOS/ASimplePlugin.bundle/Contents/MacOS/ASimplePlugin 
+  951  ls /opt/homebrew/lib/*cwipc*
+  952  brew update
+  953  brew upgrade
+  954  cwipc_pymodules_install.sh
+  955  cwipc_view --synthetic
+  956  ls -l /opt/homebrew/Cellar/flann/1.9.2/lib/libflann_cpp.1.9.2.dylib
+  957  brew uninstall cwipc
+  958  brew install cwipc
+  959  cwipc_pymodules_install.sh
+  960  cwipc_view --synthetic
+  961  ls -l lib
+  962  chmod 0 lib
+  963  ps ax | grep -i unity
+  964  gcc -dumpmachine
+  965  cd
+  966  cd src/VRTogether/VR2Gather
+  967  cd Assets/ExternalAssets
+  968  ls
+  969  ls VR2G-besthttp
+  970  cd VR2G-besthttp
+  971  cat README.md
+  972  ls Best\ HTTP\ \(Pro\)
+  973  cd Best\ HTTP\ \(Pro\)
+  974  ls -l
+  975  cat BestHTTP.asmdef
+  976  pwd
+  977  ls -a
+  978  cd ..
+  979  ls -a
+  980  ldd
+  981  cd ../..
+  982  ls
+  983  cd ..
+  984  ls
+  985  cd ..
+  986  ls
+  987  cd VR2G-Deployment
+  988  ls
+  989  open .
+  990  python3
+  991  python3
+  992  ls -l /usr/local/lib/libcwipc_*
+  993  otool -L /usr/local/lib/libcwipc_realsense2.dylib
+  994  ls -l /opt/homebrew/lib/libcwipc_*
+  995  otool -L /opt/homebrew/lib/libcwipc_realsense2.dylib
+  996  echo /Users/jack/Google\ Drive/Fort\ Shannon\ .gdoc 
+  997  echo /Users/jack/Library/CloudStorage/GoogleDrive-Jack.Jansen@cwi.nl/My\ Drive 
+  998  cd
+  999  ls -la Google\ Drive
+ 1000  rm -rf Google\ Drive
+ 1001  python3
+ 1002  which python3
+ 1003  cd 
+ 1004  cd src/VRTogether/VR2Gather/Assets/ExternalAssets/VR2G-nativeLibraries
+ 1005  ls -l
+ 1006  mkdir .build
+ 1007  mkdir .build/mac-x86
+ 1008  cd .build/mac-x86
+ 1009  python3 -m venv .venv
+ 1010  . .venv/bin/activate
+ 1011  pip install delocate
+ 1012  cd ../../VRTNativeLibraries/Plugins/
+ 1013  delocate-path --help
+ 1014  delocate-path --lib-path=x86_64 mac
+ 1015  ls -l
+ 1016  ls -l mac
+ 1017  ls -l mac/x86_64
+ 1018  ls
+ 1019  cp /usr/local/lib/libcwipc_* mac/x86_64/
+ 1020  delocate-path --lib-path=x86_64 mac
+ 1021  ls -l mac/x86_64/
+ 1022  file mac/x86_64/QtCore
+ 1023  deactivate
