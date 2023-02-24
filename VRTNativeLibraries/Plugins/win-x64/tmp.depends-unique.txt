@@ -1,0 +1,103 @@
+
+[Environment] OpenNI2.dll : C:\Program Files\OpenNI2\Redist\OpenNI2.dll 
+[Environment] jpeg62.dll : C:\libjpeg-turbo64\bin\jpeg62.dll 
+[Environment] k4a.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4a.dll 
+[Environment] k4abt.dll : C:\Program Files\Azure Kinect Body Tracking SDK\tools\k4abt.dll 
+[Environment] k4arecord.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4arecord.dll 
+[Environment] opencv_world455.dll : C:\opencv\build\x64\vc15\bin\opencv_world455.dll 
+[Environment] pcl_common.dll : C:\Program Files\PCL 1.11.1\bin\pcl_common.dll 
+[Environment] pcl_io.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io.dll 
+[Environment] pcl_io_ply.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io_ply.dll 
+[Environment] realsense2.dll : C:\Program Files (x86)\Intel RealSense SDK 2.0\bin\x64\realsense2.dll 
+[Environment] vtkCommonCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonCore-8.2.dll 
+[Environment] vtkCommonDataModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonDataModel-8.2.dll 
+[Environment] vtkCommonExecutionModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonExecutionModel-8.2.dll 
+[Environment] vtkCommonMath-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMath-8.2.dll 
+[Environment] vtkCommonMisc-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMisc-8.2.dll 
+[Environment] vtkCommonSystem-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonSystem-8.2.dll 
+[Environment] vtkCommonTransforms-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonTransforms-8.2.dll 
+[Environment] vtkDICOMParser-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkDICOMParser-8.2.dll 
+[Environment] vtkIOCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOCore-8.2.dll 
+[Environment] vtkIOGeometry-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOGeometry-8.2.dll 
+[Environment] vtkIOImage-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOImage-8.2.dll 
+[Environment] vtkIOLegacy-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOLegacy-8.2.dll 
+[Environment] vtkIOPLY-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOPLY-8.2.dll 
+[Environment] vtkImagingCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkImagingCore-8.2.dll 
+[Environment] vtkdoubleconversion-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkdoubleconversion-8.2.dll 
+[Environment] vtkjpeg-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkjpeg-8.2.dll 
+[Environment] vtklz4-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklz4-8.2.dll 
+[Environment] vtklzma-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklzma-8.2.dll 
+[Environment] vtkmetaio-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkmetaio-8.2.dll 
+[Environment] vtkpng-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkpng-8.2.dll 
+[Environment] vtksys-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtksys-8.2.dll 
+[Environment] vtktiff-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtktiff-8.2.dll 
+[Environment] vtkzlib-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkzlib-8.2.dll 
+
+[Environment] OpenNI2.dll : C:\Program Files\OpenNI2\Redist\OpenNI2.dll 
+[Environment] jpeg62.dll : C:\libjpeg-turbo64\bin\jpeg62.dll 
+[Environment] k4a.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4a.dll 
+[Environment] k4abt.dll : C:\Program Files\Azure Kinect Body Tracking SDK\tools\k4abt.dll 
+[Environment] k4arecord.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4arecord.dll 
+[Environment] opencv_world455.dll : C:\opencv\build\x64\vc15\bin\opencv_world455.dll 
+[Environment] pcl_common.dll : C:\Program Files\PCL 1.11.1\bin\pcl_common.dll 
+[Environment] pcl_io.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io.dll 
+[Environment] pcl_io_ply.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io_ply.dll 
+[Environment] realsense2.dll : C:\Program Files (x86)\Intel RealSense SDK 2.0\bin\x64\realsense2.dll 
+[Environment] vtkCommonCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonCore-8.2.dll 
+[Environment] vtkCommonDataModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonDataModel-8.2.dll 
+[Environment] vtkCommonExecutionModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonExecutionModel-8.2.dll 
+[Environment] vtkCommonMath-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMath-8.2.dll 
+[Environment] vtkCommonMisc-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMisc-8.2.dll 
+[Environment] vtkCommonSystem-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonSystem-8.2.dll 
+[Environment] vtkCommonTransforms-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonTransforms-8.2.dll 
+[Environment] vtkDICOMParser-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkDICOMParser-8.2.dll 
+[Environment] vtkIOCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOCore-8.2.dll 
+[Environment] vtkIOGeometry-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOGeometry-8.2.dll 
+[Environment] vtkIOImage-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOImage-8.2.dll 
+[Environment] vtkIOLegacy-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOLegacy-8.2.dll 
+[Environment] vtkIOPLY-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOPLY-8.2.dll 
+[Environment] vtkImagingCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkImagingCore-8.2.dll 
+[Environment] vtkdoubleconversion-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkdoubleconversion-8.2.dll 
+[Environment] vtkjpeg-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkjpeg-8.2.dll 
+[Environment] vtklz4-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklz4-8.2.dll 
+[Environment] vtklzma-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklzma-8.2.dll 
+[Environment] vtkmetaio-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkmetaio-8.2.dll 
+[Environment] vtkpng-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkpng-8.2.dll 
+[Environment] vtksys-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtksys-8.2.dll 
+[Environment] vtktiff-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtktiff-8.2.dll 
+[Environment] vtkzlib-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkzlib-8.2.dll 
+
+[Environment] OpenNI2.dll : C:\Program Files\OpenNI2\Redist\OpenNI2.dll 
+[Environment] jpeg62.dll : C:\libjpeg-turbo64\bin\jpeg62.dll 
+[Environment] k4a.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4a.dll 
+[Environment] k4abt.dll : C:\Program Files\Azure Kinect Body Tracking SDK\tools\k4abt.dll 
+[Environment] k4arecord.dll : C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\amd64\release\bin\k4arecord.dll 
+[Environment] opencv_world455.dll : C:\opencv\build\x64\vc15\bin\opencv_world455.dll 
+[Environment] pcl_common.dll : C:\Program Files\PCL 1.11.1\bin\pcl_common.dll 
+[Environment] pcl_io.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io.dll 
+[Environment] pcl_io_ply.dll : C:\Program Files\PCL 1.11.1\bin\pcl_io_ply.dll 
+[Environment] realsense2.dll : C:\Program Files (x86)\Intel RealSense SDK 2.0\bin\x64\realsense2.dll 
+[Environment] vtkCommonCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonCore-8.2.dll 
+[Environment] vtkCommonDataModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonDataModel-8.2.dll 
+[Environment] vtkCommonExecutionModel-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonExecutionModel-8.2.dll 
+[Environment] vtkCommonMath-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMath-8.2.dll 
+[Environment] vtkCommonMisc-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonMisc-8.2.dll 
+[Environment] vtkCommonSystem-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonSystem-8.2.dll 
+[Environment] vtkCommonTransforms-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkCommonTransforms-8.2.dll 
+[Environment] vtkDICOMParser-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkDICOMParser-8.2.dll 
+[Environment] vtkIOCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOCore-8.2.dll 
+[Environment] vtkIOGeometry-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOGeometry-8.2.dll 
+[Environment] vtkIOImage-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOImage-8.2.dll 
+[Environment] vtkIOLegacy-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOLegacy-8.2.dll 
+[Environment] vtkIOPLY-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkIOPLY-8.2.dll 
+[Environment] vtkImagingCore-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkImagingCore-8.2.dll 
+[Environment] vtkdoubleconversion-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkdoubleconversion-8.2.dll 
+[Environment] vtkjpeg-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkjpeg-8.2.dll 
+[Environment] vtklz4-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklz4-8.2.dll 
+[Environment] vtklzma-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtklzma-8.2.dll 
+[Environment] vtkmetaio-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkmetaio-8.2.dll 
+[Environment] vtkpng-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkpng-8.2.dll 
+[Environment] vtksys-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtksys-8.2.dll 
+[Environment] vtktiff-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtktiff-8.2.dll 
+[Environment] vtkzlib-8.2.dll : C:\Program Files\PCL 1.11.1\3rdParty\VTK\bin\vtkzlib-8.2.dll 
+
