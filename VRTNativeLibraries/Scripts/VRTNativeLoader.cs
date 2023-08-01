@@ -9,7 +9,6 @@ namespace VRT.NativeLibraries
     public class VRTNativeLoader : MonoBehaviour
     {
         public NativeLibraryDirectory nativeLibraries;
-        private string nativeLibrariesPath;
         private string platformLibrariesPath;
         void Awake()
         {
@@ -19,6 +18,7 @@ namespace VRT.NativeLibraries
         public void Init()
         {
             Debug.Log("VRTNativeLoader: Init() called");
+            string nativeLibrariesPath;
 #if UNITY_EDITOR
             string path = UnityEditor.AssetDatabase.GetAssetPath(nativeLibraries);
             nativeLibrariesPath = Path.GetDirectoryName(path);
