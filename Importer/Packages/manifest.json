@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nl.cwi.dis.vr2gather.nativelibraries": "file:../../nl.cwi.dis.vr2gather.nativelibraries",
     "com.unity.feature.development": "1.0.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

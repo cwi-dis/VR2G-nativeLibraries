@@ -88,6 +88,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "nl.cwi.dis.vr2gather.nativelibraries": {
+      "version": "file:../../nl.cwi.dis.vr2gather.nativelibraries",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
