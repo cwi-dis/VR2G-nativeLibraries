@@ -26,12 +26,12 @@ rm $linux_to/*.{smd,so}*
 cp -P $linux_from/lib/*.{smd,so}* $linux_to/
 find $linux_to -type l -print0 | xargs -0 rm
 #
-touch $mac_to/_dummy.dylib  $mac_to/_dummy.smd
-rm $mac_to/*.{smd,dylib}
-cp $mac_from/lib/*.{smd,dylib} $mac_to/
+touch $mac_to/_dummy.dylib $mac_to/_dummy.smd $mac_to/_dummy.so
+rm $mac_to/*.{smd,dylib,so}
+cp $mac_from/lib/*.{smd,dylib,so} $mac_to/
 #
-touch $win_to/_dummy.dll $win_to/_dummy.smd
-rm $win_to/*.{smd,dll}
-cp $win_from/bin/*.{smd,dll} $win_to/
+touch $win_to/_dummy.dll $win_to/_dummy.smd $win_to/_dummy.so
+rm $win_to/*.{smd,dll,so}
+cp $win_from/bin/*.{smd,dll,so} $win_to/
 #
 echo Please open the Importer project to fix up the meta files, and then checkin to git.
