@@ -24,6 +24,7 @@ win_to="$package_dir/Runtime/Plugins/win-x64"
 touch $linux_to/_dummy.so  $linux_to/_dummy.smd
 rm $linux_to/*.{smd,so}*
 cp -P $linux_from/lib/*.{smd,so}* $linux_to/
+find $linux_to -type l -print0 | xargs -0 rm
 #
 touch $mac_to/_dummy.dylib  $mac_to/_dummy.smd
 rm $mac_to/*.{smd,dylib}
