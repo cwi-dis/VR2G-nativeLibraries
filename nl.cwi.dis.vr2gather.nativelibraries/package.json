@@ -1,6 +1,6 @@
 {
 	"name" : "nl.cwi.dis.vr2gather.nativelibraries",
-	"version" : "0.9.1",
+	"version" : "0.9.3",
 	"description" : "Binary packages for use with nl.cwi.dis.vr2gather. Native libraries plus pinvoke wrappers around them. Some may not be open source but with a license that allows redistribution in binary form.",
 	"unity" : "2022.3"	
 }
