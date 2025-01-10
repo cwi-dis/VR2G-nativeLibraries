@@ -15,7 +15,7 @@ namespace VRT.NativeLibraries
         static extern bool AddDllDirectory(string lpPathName);
 
         public NativeLibraryDirectory nativeLibraries;
-        private string platformLibrariesPath;
+        public string platformLibrariesPath;
         void Awake()
         {
             Init();
