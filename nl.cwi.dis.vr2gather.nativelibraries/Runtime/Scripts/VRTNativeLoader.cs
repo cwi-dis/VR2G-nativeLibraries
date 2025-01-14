@@ -24,30 +24,12 @@ namespace VRT.NativeLibraries
         public void Init()
         {
             Debug.Log("VRTNativeLoader: Init() called");
-            string nativeLibrariesPath;
 #if UNITY_EDITOR
             string path = UnityEditor.AssetDatabase.GetAssetPath(nativeLibraries);
-            nativeLibrariesPath = Path.GetDirectoryName(path);
+            platformLibrariesPath = getEditorPlatformLibrariesPath(path);
 #else
-            nativeLibrariesPath = "DLLs";
+            platformLibrariesPath = getRuntimePlatformLibrariesPath();
 #endif
-            Debug.Log($"VRTNativeLoader: path = {nativeLibrariesPath}");
-
-#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
-            platformLibrariesPath = Path.Combine(nativeLibrariesPath, "win-x64");
-#elif UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
-            platformLibrariesPath = Path.Combine(nativeLibrariesPath, "mac");
-
-#elif UNITY_EDITOR_LINUX || UNITY_STANDALONE_LINUX
-            platformLibrariesPath = Path.Combine(nativeLibrariesPath, "linux-x64");
-#elif UNITY_ANDROID
-            platformLibrariesPath = Path.Combine(nativeLibrariesPath, "android-arm");
-#else
-            Debug.LogFatal("VRTNativeLoader: Unknown runtime platform");
-#endif
-            Debug.Log($"VRTNativeLoader: platform path = {platformLibrariesPath}");
-            platformLibrariesPath = Path.GetFullPath(platformLibrariesPath);
-            Debug.Log($"VRTNativeLoader: abs platform path = {platformLibrariesPath}");
             if (!Directory.Exists(platformLibrariesPath))
             {
                 Debug.LogError($"VRTNativeLoader: Directory {platformLibrariesPath} does not exist");
@@ -55,6 +37,41 @@ namespace VRT.NativeLibraries
             }
             addPathToDynamicLoaderPath(platformLibrariesPath);
         }
+
+#if UNITY_EDITOR
+        public static string getEditorPlatformLibrariesPath(string path)
+        {
+            string fullPath = Path.GetDirectoryName(path);
+#if UNITY_EDITOR_WIN
+            platformLibrariesPath = Path.Combine(fullPath, "win-x64");
+#elif UNITY_EDITOR_OSX
+            platformLibrariesPath = Path.Combine(fullPath, "mac");
+
+#elif UNITY_EDITOR_LINUX
+            platformLibrariesPath = Path.Combine(fullPath, "linux-x64");
+#elif UNITY_ANDROID
+            platformLibrariesPath = Path.Combine(fullPath, "android-arm");
+#else
+            Debug.LogFatal("VRTNativeLoader: Unknown editor runtime platform");
+#endif
+            Debug.Log($"VRTNativeLoader: platform path = {platformLibrariesPath}");
+            platformLibrariesPath = Path.GetFullPath(platformLibrariesPath);
+            Debug.Log($"VRTNativeLoader: abs platform path = {platformLibrariesPath}"); 
+            return platformLibrariesPath;
+
+        }
+ 
+#else
+
+        public static string getRuntimePlatformLibrariesPath()
+        {
+            string nativeLibrariesPath = Path.Combine(Path.GetDirectoryName(Application.dataPath), "Plugins");
+#if UNITY_STANDALONE_WIN || UNITY_STANDALONE_LINUX
+            nativeLibrariesPath = Path.Combine(nativeLibrariesPath, "x86_64");
+#endif
+            return nativeLibrariesPath;
+        }
+#endif
         void addPathToDynamicLoaderPath(string path)
         {
 #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN

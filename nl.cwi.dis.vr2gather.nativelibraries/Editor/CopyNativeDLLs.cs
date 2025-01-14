@@ -22,72 +22,49 @@ namespace VRT.NativeLibraries {
             foreach(var guid in assets)
             {
                 var path = AssetDatabase.GUIDToAssetPath(guid);
-#if xxxjack_bad
-                var nativeLibraries = AssetDatabase.LoadAssetAtPath<NativeLibraryDirectory>(path);
-                if (nativeLibraries == null)
+                var srcDir = VRTNativeLoader.getEditorPlatformLibrariesPath(path);
+                var dstDir = getBuildPlatformLibrariesPath(report);
+
+                if ( string.IsNullOrEmpty(srcDir) || string.IsNullOrEmpty(dstDir) ||
+                    !Directory.Exists(srcDir) || !Directory.Exists(dstDir)
+                    )
                 {
-                    Debug.LogWarning("NativeLibraryDirectory not found");
+                    Debug.LogWarning("CopyNativeDLLs.OnPostprocessBuild: No native libraries copied");
                     return;
                 }
-#endif
-                string nativeLibrariesPath = Path.GetDirectoryName(path);
-                string platformLibrariesPath;
-                if (report.summary.platform == BuildTarget.StandaloneWindows64)
-                {
-                    platformLibrariesPath = Path.Combine(nativeLibrariesPath, "win-x64");
-                }
-                else if (report.summary.platform == BuildTarget.StandaloneOSX)
-                {
-                    platformLibrariesPath = Path.Combine(nativeLibrariesPath, "mac-x64");
-                }
-                else if (report.summary.platform == BuildTarget.StandaloneLinux64)
-                {
-                    platformLibrariesPath = Path.Combine(nativeLibrariesPath, "linux-x64");
-                }
-                else if (report.summary.platform == BuildTarget.Android)
-                {
-                    platformLibrariesPath = Path.Combine(nativeLibrariesPath, "android-arm");
-                }
-                else
-                {
-                    Debug.LogError("Unknown runtime platform");
-                    return;
-                }
-                platformLibrariesPath = Path.GetFullPath(platformLibrariesPath);
-                if (!Directory.Exists(platformLibrariesPath))
-                {
-                    Debug.LogError($"Directory {platformLibrariesPath} does not exist");
-                    return;
-                }
-                Debug.Log($"CopyNativeDLLs.OnPostprocessBuild: platform path = {platformLibrariesPath}");
-                if (report.summary.platform == BuildTarget.StandaloneWindows64)
-                {
-                    var buildOutputPath = Path.GetDirectoryName(report.summary.outputPath);
-                    var dataDirs = Directory.GetDirectories(buildOutputPath, "*_Data");
-                    if (dataDirs.Length != 1)
-                    {
-                        Debug.LogError($"Expected 1 *_Data directory but found {dataDirs.Length}");
-                        return;
-                    }
-                    var dllOutputPath = Path.Combine(buildOutputPath, dataDirs[0], "Plugins", "x86_64");
-                    CopyFiles(platformLibrariesPath, dllOutputPath);
-                }
-                else if (report.summary.platform == BuildTarget.StandaloneOSX)
-                {
-                    CopyFiles(platformLibrariesPath, report.summary.outputPath + "/Contents/");
-                }
-                else if (report.summary.platform == BuildTarget.StandaloneLinux64)
-                {
-                    CopyFiles(platformLibrariesPath, Path.GetDirectoryName(report.summary.outputPath) + "/");
-                }
-                else if (report.summary.platform == BuildTarget.Android)
-                {
-                    Debug.LogWarning("Including native DLLs not supported for Android builds");
-                }
+                CopyFiles(srcDir, dstDir);
             }
-
         }
-
+        public static string getBuildPlatformLibrariesPath(BuildReport report)
+        {
+            if (
+                report.summary.platform == BuildTarget.StandaloneWindows64
+                ||
+                report.summary.platform == BuildTarget.StandaloneLinux64
+                )
+            {
+                var buildOutputPath = Path.GetDirectoryName(report.summary.outputPath);
+                var dataDirs = Directory.GetDirectories(buildOutputPath, "*_Data");
+                if (dataDirs.Length != 1)
+                {
+                    Debug.LogError($"Expected 1 *_Data directory but found {dataDirs.Length}");
+                    return null;
+                }
+                var dllOutputPath = Path.Combine(buildOutputPath, dataDirs[0], "Plugins", "x86_64");
+                return dllOutputPath;
+            }
+            else if (report.summary.platform == BuildTarget.StandaloneOSX)
+            {
+                var dllOutputPath = Path.Combine(report.summary.outputPath, "Contents", "Plugins");
+                return dllOutputPath;
+            }
+            else if (report.summary.platform == BuildTarget.Android)
+            {
+                Debug.LogWarning("Including native DLLs not supported for Android builds");
+                return null;
+            }
+            return null;
+        }
         void CopyFiles(string srcDir, string dstDir)
         {
             Debug.Log($"CopyNativeDLLs.CopyFiles src {srcDir} dst {dstDir}");
