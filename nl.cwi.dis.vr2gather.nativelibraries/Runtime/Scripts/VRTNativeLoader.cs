@@ -65,7 +65,7 @@ namespace VRT.NativeLibraries
 
         public static string getRuntimePlatformLibrariesPath()
         {
-            string nativeLibrariesPath = Path.Combine(Path.GetDirectoryName(Application.dataPath), "Plugins");
+            string nativeLibrariesPath = Path.Combine(Application.dataPath, "Plugins");
 #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_LINUX
             nativeLibrariesPath = Path.Combine(nativeLibrariesPath, "x86_64");
 #endif
