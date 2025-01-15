@@ -55,7 +55,7 @@ namespace VRT.NativeLibraries {
             }
             else if (report.summary.platform == BuildTarget.StandaloneOSX)
             {
-                var dllOutputPath = Path.Combine(report.summary.outputPath, "Contents", "Plugins");
+                var dllOutputPath = Path.Combine(report.summary.outputPath, "Contents", "Libraries");
                 return dllOutputPath;
             }
             else if (report.summary.platform == BuildTarget.Android)
