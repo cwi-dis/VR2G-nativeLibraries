@@ -25,9 +25,7 @@ namespace VRT.NativeLibraries {
                 var srcDir = VRTNativeLoader.getEditorPlatformLibrariesPath(path);
                 var dstDir = getBuildPlatformLibrariesPath(report);
 
-                if ( string.IsNullOrEmpty(srcDir) || string.IsNullOrEmpty(dstDir) ||
-                    !Directory.Exists(srcDir) || !Directory.Exists(dstDir)
-                    )
+                if ( string.IsNullOrEmpty(srcDir) || string.IsNullOrEmpty(dstDir) || !Directory.Exists(srcDir) )
                 {
                     Debug.LogWarning("CopyNativeDLLs.OnPostprocessBuild: No native libraries copied");
                     return;
