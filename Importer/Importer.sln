@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Rider.Editor", "Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRTNativeLibraries", "VRTNativeLibraries.csproj", "{25BCA9D1-86BD-596E-3AF4-65C3801965AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{F86443B6-4CDD-EDB4-7D5A-E981A73C5A0A}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Settings.Editor", "Unity.Settings.Editor.csproj", "{21144DC6-BE66-F4C1-199D-13ACAB1F71A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unity.VSCode.Editor.csproj", "{7B229A05-25FD-6662-40B4-EE68FCB5DA65}"
@@ -67,6 +69,10 @@ Global
 		{25BCA9D1-86BD-596E-3AF4-65C3801965AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25BCA9D1-86BD-596E-3AF4-65C3801965AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25BCA9D1-86BD-596E-3AF4-65C3801965AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86443B6-4CDD-EDB4-7D5A-E981A73C5A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86443B6-4CDD-EDB4-7D5A-E981A73C5A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86443B6-4CDD-EDB4-7D5A-E981A73C5A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86443B6-4CDD-EDB4-7D5A-E981A73C5A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21144DC6-BE66-F4C1-199D-13ACAB1F71A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21144DC6-BE66-F4C1-199D-13ACAB1F71A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21144DC6-BE66-F4C1-199D-13ACAB1F71A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
