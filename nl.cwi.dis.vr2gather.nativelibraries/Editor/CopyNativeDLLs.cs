@@ -4,7 +4,7 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 using System.IO;
-using VRT.Core;
+// using VRT.Core;
 
 namespace VRT.NativeLibraries {
     public class CopyNativeDLLs : IPostprocessBuildWithReport
