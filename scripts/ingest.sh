@@ -1,5 +1,4 @@
 #!/bin/bash
-set -ex
 if [ $# -ne 3 ]; then
 	echo Usage: $0 linuxdir macdir windir
 	echo
@@ -7,6 +6,7 @@ if [ $# -ne 3 ]; then
 	echo The correct files will be copied into the right location in nl.cwi.dis.vr2gather.nativelibraries
 	exit 1
 fi
+set -x
 linux_from=$1
 mac_from=$2
 win_from=$3
